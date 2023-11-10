@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='bg.jpg') }}"); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            color: #DE3163;
+            font-size: 80px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 40px;
+            font-size: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #DE3163;
+            text-decoration: underline;
+        }
+
+        nav a.button {
+            color: #DE3163;
+            text-decoration: none;
+            background-color: #FFF5EE;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+        }
+
+        nav a.button:hover {
+            background-color: #DE3163; 
+            color: white; 
+        }
+        
+    
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 140px; 
+            height: 70px; 
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+    
+    <h1>Mayi's Website ! ★</h1>
+    <nav>
+        <ul>
+            <li><a href="/profile" class="button">♡ PROFILE</a></li>
+            <li><a href="/works" class="button">✎ WORKS</a></li>
+            <li><a href="/contact" class="button">☎ CONTACTS</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

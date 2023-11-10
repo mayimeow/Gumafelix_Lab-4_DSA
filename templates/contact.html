@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Page</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='bg.jpg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            color: #DE3163;
+            font-size: 80px;
+        }
+
+        .contact-info {
+            font-size: 24px; /* Increased font size */
+            text-align: justify;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact-link {
+            font-size: 16px;
+            text-decoration: none;
+            color: #DE3163;
+            transition: color 0.3s;
+        }
+
+        .contact-link strong { /* Add strong element to bold the specific words */
+            font-weight: bold;
+            color: #FF69B4; /* Pink color for the words "Email," "Phone," and "Address" */
+        }
+
+        .contact-link:hover {
+            color: #F69352;
+        }
+
+        .back-button {
+            background-color: #DE3163;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px; /* Add margin-top to lower the button */
+        }
+
+        .back-button:hover {
+            background-color: #FFA07A;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact us at!˚ʚ♡ɞ˚</h1>
+
+    <div class="contact-info">
+        <p>⋆ <strong>Email:</strong> <a class="contact-link" href="mailto:maryanngumafelix08@gmail.com">maryanngumafelix08@gmail.com</a></p>
+        <p>⋆ <strong>Phone:</strong> <a class="contact-link" href="tel:+639428241060">+639428241060</a></p>
+        <p>⋆ <strong>Address:</strong> 255 Looban II Loma De Gato, Marilao Bulacan</p>
+        <!-- Add more contact information as needed -->
+    </div>
+
+    <a class="back-button" href="/">Back to Main Page</a>
+</body>
+</html>
