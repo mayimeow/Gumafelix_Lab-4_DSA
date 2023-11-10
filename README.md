@@ -3,12 +3,7 @@
 # My Profile Using Flask
 
 Install dependency
-## Run the following command to install Flask using pip:
-
-pip install Flask
-
-
-run the app
+## Run the following command to view the flask:
 
 execute the following in your command propmt or terminal
 
